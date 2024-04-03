@@ -1,0 +1,22 @@
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.box1 {
+    background-color: #0C120C;
+    color: aquamarine;
+    width: 30%;
+    padding: 32px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+}
+
+.box2 {
+    background-color: #C20114;
+    color: antiquewhite;
+    width: 70%;
+    padding: 20px; 
+    margin: auto;
+    box-sizing: border-box;
+}
