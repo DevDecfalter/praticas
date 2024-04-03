@@ -1,0 +1,62 @@
+body {
+    background-color: black;
+    color: #fff;
+}
+
+/* Exercício 1: Div com largura e altura fixas */
+.minha-div {
+    width: 300px;
+    height: 150px;
+    margin: 25px auto;
+    text-align: center;
+    background-color: rgba(31, 143, 247, 0.726);
+}
+
+/* Exercício 2 e 3: Divs lado a lado */
+.left, .right {
+    width: calc(50% - 20px); /* 20px é a soma da largura da borda */
+    height: 200px;
+    margin: 25px 10px; /* Adicionando margem para separar as divs */
+    float: left; /* Removendo margem automática */
+    box-sizing: border-box; /* Considerando a borda no cálculo da largura */
+}
+
+.left {
+    background-color: burlywood;
+    border: 10px solid blue;
+}
+
+.right {
+    background-color: blueviolet;
+    border: 10px solid red;
+}
+
+/* Exercício 4 e 5: Divs com largura e altura dinâmicas */
+.divs-dinamicas-1, .divs-dinamicas-2 {
+    width: 25%;
+    height: 25vh; /* Usando viewport height para altura dinâmica */
+    margin: 25px auto;
+    border: 15px solid;
+    position: relative;
+}
+
+.divs-dinamicas-1 {
+    border-color: salmon;
+}
+
+.divs-dinamicas-2 {
+    border-color: rgb(0, 255, 42);
+    position: absolute;
+    top: 0; /* Posicionando no topo */
+    right: 0; /* Posicionando à direita */
+}
+
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: rgba(145, 230, 252, 0.384);
+}

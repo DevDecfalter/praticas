@@ -1,0 +1,59 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #025159;
+}
+
+header {
+    background-color: #010440;
+    color: #fff;
+    text-align: initial;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #010440;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+a {
+    color: #fff;
+}
+
+/* Estilos específicos dos exercícios */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.exercise {
+    background-color: #010326;
+    color: #7C05F2;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.exercise h2 {
+    margin-top: 0;
+}
+
+p {
+    color: #F20587;
+}

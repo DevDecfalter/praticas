@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    background-color: rgba(255, 68, 0, 0.651);
+}
+
+header {
+    background-color: blueviolet;
+}
+
+nav {
+    background-color: antiquewhite;
+    
+    border: 15px solid darkblue;
+
+    width: 200px;
+    height: 200px;
+
+    margin: auto;
+}
+
+
+section {
+    background-color: aliceblue;
+
+    margin: auto;
+
+    width: 250px;
+    height: 250px;
+}
+
+article {
+    background-color: aquamarine;
+
+    border: 15px solid darkgoldenrod;
+}
