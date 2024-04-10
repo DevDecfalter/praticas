@@ -7,28 +7,43 @@
     <meta name="description" content="Tabela simples com HTML e CSS">
     <title>Tabela de Produtos</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
         table {
             width: 100%;
             border-collapse: collapse;
             margin-bottom: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         
         th, td {
-            padding: 8px;
+            padding: 12px;
             text-align: left;
             border-bottom: 1px solid #ddd;
         }
         
         th {
             background-color: #f2f2f2;
+            color: #333;
+            font-weight: bold;
         }
         
         tr:nth-child(even) {
-            background-color: #f2f2f2;
+            background-color: #f9f9f9;
         }
 
         tr:hover {
-            background-color: #ddd;
+            background-color: #f0f0f0;
         }
     </style>
 </head>
