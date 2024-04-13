@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Brian Muniz Silveira">
+    <meta name="description" content="Capítulo 16 Aula 4/Aula 05/Aula 06">
+    <title>Grouping Tag</title>
+
+    <style> /*Formatações da página*/
+
+    :root { /*variáveis em CSS - Paleta de cor*/
+        --branco: #fff;
+        --branco-secundario: #d3d3d3;
+        --cinza-claro: #808080;
+        --cinza-escuro: #646464;
+        --cinza-terciario: #7e7e7e;
+        --cinze-rodape: #afafaf;
+    }
+        body {
+            font-family: monospace;
+            background-color: var(--cinza-claro);
+        }
+
+        header {
+            background-color: var(--branco);
+            margin: 10px;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: var(--cinza-escuro);
+            padding: 3px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315); /*É possível criar esta mesma sombra utilizando o DevTools (F12). Mas antes para que funcione a declaração já deve estar feita.*/
+        }
+
+        nav > a{
+            text-align: left;
+            color: var(--branco);
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        main {
+            background-color: var(--branco);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 4px 4px 7px 0px rgba(0, 0, 0, 0.384);
+        }
+
+        article {
+            background-color: var(--branco-secundario);
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: var(--cinza-terciario);
+        }
+
+        article {
+            font-size: 16px;
+        }
+
+        footer {
+            background-color: #000;
+            color: var(--cinze-rodape);
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        div#bola{ /*Formatção da Div ao fim da página*/
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: var(--branco);
+            border-radius: 100%;
+        }
+
+        /* Estilos para telas maiores */
+
+        @media only screen and (min-width: 768px) {
+            body {
+                font-size: 18px; /* Ajuste o tamanho da fonte para telas maiores */
+            }
+
+            main {
+                width: 80%; /* Ajuste a largura do conteúdo principal para telas maiores */
+            }
+
+            nav > a {
+                margin-right: 20px; /* Reduza a margem entre os links do menu para telas maiores */
+            }
+        }
+
+        /* Estilos para telas menores */
+        @media only screen and (max-width: 767px) {
+            body {
+                font-size: 16px; /* Reduza o tamanho da fonte para telas menores */
+            }
+
+            main {
+                width: 90%; /* Ajuste a largura do conteúdo principal para telas menores */
+            }
+
+            nav > a {
+                margin-right: 10px; /* Reduza ainda mais a margem entre os links do menu para telas menores */
+            }
+        }
+        
+    </style>
+
+</head>
+
+<body>
+
+    <!-- inicio do cavbeçalho + menu de navegação -->
+
+    <header> 
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="0.5" d="M0,96L60,112C120,128,240,160,360,149.3C480,139,600,85,720,80C840,75,960,117,1080,149.3C1200,181,1320,203,1380,213.3L1440,224L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link - 1</a>
+            <a href="#">Link - 2</a>
+            <a href="#">Link - 3</a>
+            <a href="#">Link - 4</a>
+            <a href="#">Link - 5</a>
+        </nav>
+    </header>   
+
+    <!-- fim do cavbeçalho + menu de navegação -->
+
+    <main>
+
+        <!-- inicio da seção de notícias -->
+
+        <section id="assuntos">
+            <p>Esporte Política Técnologia</p>
+        </section>
+
+        <section id="noticias">
+
+            <article>
+                <h2>Noticia do Brasil</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ipsum excepturi omnis ducimus illum. Id, obcaecati eligendi numquam cumque accusamus provident pariatur architecto fugiat inventore nihil. Aliquid odio quo sunt aut corporis. Harum accusantium officia in suscipit esse velit debitis ipsam facilis, iste pariatur exercitationem necessitatibus quasi repellat, hic voluptatibus.</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+
+            </article>
+
+            <!-- Explicação realizada durante a aula sobre Grouping Tag -->
+
+                <!--
+                        11/04/2024 - 9:55
+
+                     As Groupings Tags, podem ser utilizadas de formas diversificadas, neste exemplo temos um 'article' e junto com um 'aside', mas podemos ter um um 'artcile' + 'aside' + 'article, ou 'section' + 'main' + 'header' + 'article'. Há uma certa diversidade de utilização das Grouping Tags 
+                -->
+
+        
+        </section>
+
+        <section id="outras-noticias">
+            <article>
+                <h2>Descoberta de Nova Espécie de Borboleta Encanta Biólogos</h2>
+                <p>Biólogos da Universidade de Ecologia de Mariposas (UEM) anunciaram a descoberta de uma nova espécie de borboleta na floresta amazônica. Batizada de "Morpho aurora", a borboleta apresenta uma coloração vibrante e padrões únicos nas asas, despertando interesse pela sua beleza e potencial impacto na ecologia local.</p>
+                <aside>
+                    <p>Autor: Carolina Silva, correspondente de ciência da Revista Ecossistema.</p>
+                </aside>
+            </article>
+
+            <article>
+                <h2>Startup de Tecnologia Alcança Marca Bilionária em Investimentos</h2>
+                <p>A startup de inteligência artificial "SynthAI" anunciou ter alcançado a marca bilionária em investimentos, tornando-se uma das empresas mais valiosas do setor. Reconhecida por sua inovação em algoritmos de aprendizado de máquina, a SynthAI planeja expandir suas operações globalmente e investir em pesquisa para aplicações em saúde, finanças e logística.</p>
+                <aside>
+                    <p>Autor: David Santos, editor de tecnologia do Jornal Digital TechNews.</p>
+                </aside>
+            </article>
+
+            <!-- fim da seção de notícias -->
+
+        </section>
+    </main>
+
+
+    <!-- Inicio do Roda-pé -->
+    <footer>
+        <p>Desenvolvido pelo CursoemVideo</p>
+    </footer>
+    <!-- fim do Roda-pé -->
+
+    <div id="bola">
+        <!-- Div de aplicação do 'border-radius' -->
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="0.5" d="M0,96L60,112C120,128,240,160,360,149.3C480,139,600,85,720,80C840,75,960,117,1080,149.3C1200,181,1320,203,1380,213.3L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+
+</body>
+
+</html>
+
+<!-- Anotações realizadas durante as aulas do curso de html5+css3 -->
+
+<!-- 
+
+    Capítulo 16 Aula 5 – Sombra nas Caixas - 13/04/2024 - 07:52
+
+    -Tomar cuidado com a utilização de sombras, não precisa deixar explícito que há sombras em tal elemento. 
+
+    -A declaração '1px 1px 1px black' tem o seguinte significado, o primeiro '1px' é o pixel na direção horizontal, o segundo '1px' é na vertical e o terceiro '1px' é o espalhamento da sombra, e a ultima declaração é a cor, neste caso, cor preta, #000 ou black. 
+
+    -Tomar cuiadado com a questão das cores, sempre manter a sombra na cor preta por padrão e aplicar o efeito de transparência a ela.
+
+    -Utilizando o DevTools, temos também como criar nossas sombras de forma extremamente facil, formantando como queremos que ela fique e só copiar e colar na declaração 'box-shadow'.
+
+ -->
+
+ <!-- 
+
+    Capítulo 16 Aula 6 – Caixas com vértices arredondados - 13/04/2024 - 08:21
+
+    -A declaração 'border-radius' assim como a 'box-shadow', ela já vem com um shorhand por padrão, por exemplo, 'box-radius: 33px;', porém, há as formataçõs individuais dela, que são, com base na 'box-radius:33px;': 
+    
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;.
+
+    -Existe alguns modos de se aplicar o 'border-radius':
+    1° main {border radius: 10px;}
+    2° main {border radius: 10px 10px;}
+    3° main {border radius: 10px 10px 10px 10px;}
+    =
+    1° Os 10px é aplicado para cada um dos quatro cantos
+    2° Assim como pode ser usado esse shorthand na 'margin' no 'box-radius' também.
+    3° Cada canta da borda é formatada de maneira independente
+    
+    
+  -->
